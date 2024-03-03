@@ -77,4 +77,8 @@ multi_robots.run([robot_group_all,task_11])
 print("task11已完成")
 time.sleep(1)
 
+multi_robots.run([robot_group_all,task_12])
+print("task12已完成")
+time.sleep(1)
+
 multi_robots.close()
