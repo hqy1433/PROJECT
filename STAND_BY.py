@@ -18,5 +18,4 @@ number = multi_robots.number_id_by_sn([0, sn_list[0]], [1, sn_list[1]], [2, sn_l
 robot_group_all=multi_robots.build_group([0, 1, 2, 3, 4, 5])
 
 multi_robots.run([robot_group_all,stand_by])
-time.sleep(1)
 multi_robots.close()

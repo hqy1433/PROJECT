@@ -1,5 +1,6 @@
 from multi_robomaster import multi_robot
 from Program_Library import *
+from robomaster import led, blaster
 import time
 
 sn_list = ['3JKCJ4M00105QR', '3JKCJ1L00105AA', '3JKCJ1L001050K',
@@ -58,21 +59,15 @@ print("task7已完成")
 time.sleep(1)
 
 multi_robots.run([robot_group_red,task_8_red],[robot_group_blue,task_8_blue])
-time.sleep(1)
 multi_robots.run([robot_group1,task_8_01],[robot_group2,task_8_23],[robot_group3,task_8_45])
 print("task8已完成")
-time.sleep(1)
-
-multi_robots.run([robot_group_all,task_9])
-print("task9已完成")
 time.sleep(1)
 
 multi_robots.run([robot_group_all,task_10])
 time.sleep(1)
 multi_robots.run([robot_group_red,task_10_red],[robot_group_blue,task_10_blue])
 print("task10已完成")
-time.sleep(1)
-
+"""
 multi_robots.run([robot_group_all,task_11])
 print("task11已完成")
 time.sleep(1)
@@ -80,5 +75,5 @@ time.sleep(1)
 multi_robots.run([robot_group_all,task_12])
 print("task12已完成")
 time.sleep(1)
-
+"""
 multi_robots.close()

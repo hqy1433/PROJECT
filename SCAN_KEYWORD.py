@@ -8,7 +8,7 @@ from PIL import Image
 QRCODE_NAME = "qrcode.png"
 
 helper = conn.ConnectionHelper()
-info = helper.build_qrcode_string(ssid="hqy1433", password="clm1314520")
+info = helper.build_qrcode_string(ssid="robomaster_5G", password="wtyz196901")
 myqr.run(words=info)
 time.sleep(1)
 img = Image.open(QRCODE_NAME)
